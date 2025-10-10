@@ -1,0 +1,249 @@
+.main{
+    text-align: center;
+}
+.main img{
+    height: 600px;
+    z-index: 0;
+}
+
+.left{
+    text-align: left;
+    display: inline-block;
+    width: 49%;
+    margin-top: 10px;
+}
+
+.right {
+    text-align: right;
+    display: inline-block;
+    width: 49%;
+    margin-top: 10px;
+    
+}
+
+.right img{
+    height: 200px;
+}
+
+.left img{
+    height: 200px;
+}
+
+.button{
+    padding: 1px;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: black;
+    background-color: rgb(231, 231, 231);
+    max-width: 150px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+.button:hover{
+    background-color: rgb(177, 177, 177);
+}
+
+.index{
+    background-color: white;
+    text-align: center;
+}
+
+.menu{
+    text-align: center;
+    background-color: white;
+    z-index: 0;
+}
+
+.menu>div{
+    margin-top: 20px;
+}
+#mur img{
+    height: 100%;
+    width: 100%;
+    transition: transform 0.1s;
+}
+
+.menu img{
+    transition: transform 0.1s;
+    margin-left: 2px;
+}
+.menu img:hover{
+    transform: translateY(-4px);
+}
+#mur .img_mur>a {
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+}
+.formulaire{
+    margin: 10px;
+}
+@media screen and (min-width: 300px) {
+    #mur {
+        column-count: 3;
+    }
+    
+}
+    
+@media screen and (min-width: 600px) {
+    #mur {
+        column-count: 5;
+    }
+}
+
+.like_bar{
+    position: absolute;
+    z-index: 5;
+    height: 20%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.459);
+    transition: all 0.5s ease;
+    bottom: -1000px;
+    left: 0;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+#mur div>div>svg{
+    position: relative;
+    top: 3px;
+    background-color: transparent;
+    color: transparent;
+    fill: white;
+    border: none;
+    transition: fill 0.5s;
+}
+
+#mur div>div svg:hover {
+    cursor: pointer;
+
+}
+
+.like_texte{
+    pointer-events: none;
+}
+
+
+.img_mur{
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin-bottom: 2px;
+}
+
+h1{
+    text-align: center;
+}
+
+.like_bar:hover{
+    background-color: white; 
+    pointer-events: none;
+}
+
+.log{
+    position: absolute;
+    top: 10px;
+    right: 10px;   
+    z-index: 10; 
+}
+
+#signin{
+    margin-left: 20px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    filter: blur(0px);
+}
+#signin:hover{
+    color: rgb(0, 0, 105);
+}
+
+
+#signup{
+    margin-left: 20px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    filter: blur(0px);
+    z-index: 1;
+}
+#signup:hover{
+    color: rgb(0, 0, 105);
+}
+
+.signform{
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.877);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.signform input.texte{
+    position: relative;
+    height: 5%;
+    width: 70%;
+    display: block;
+    margin:10px 5px;
+    border: unset;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+
+}
+
+#log_logo{
+    position: absolute;
+    height: 8px;
+    width: 8px;
+    margin: 0px 5px;
+    background-color: grey;
+    color: grey;
+    border-radius: 50%;
+}
+#log_logo::after{
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 16px;
+    margin-top: 9px;
+    left: -4px;
+    background-color: grey;
+    border-radius: 50% 50% 0 0;
+}
+
+
+.closebutton{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: red;
+    padding: 5px;
+}
+
+
+.signpage {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    height: 50%;
+    width: 40%;
+    transform: translate(-50%, -20%);
+    display: flex;
+    align-items: center;
+}

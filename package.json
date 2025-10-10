@@ -1,0 +1,17 @@
+{
+  "name": "mur-image",
+  "version": "1.0.0",
+  "description": "Projet universitaire de première année : mur d'images interactif avec likes et commentaires (Node.js + PostgreSQL)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "author": "S. Bonjour",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "pg": "^8.11.5"
+  }
+}
+
